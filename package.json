@@ -1,0 +1,14 @@
+{
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"be": "nodemon server.js"
+	},
+	"dependencies": {
+		"express": "latest"
+	},
+	"devDependencies": {
+		"nodemon": "latest",
+		"vite": "latest"
+	}
+}

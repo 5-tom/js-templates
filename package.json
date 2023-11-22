@@ -2,7 +2,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"be": "nodemon --watch server.ts --exec \"tsc -m nodenext --strict server.ts && node server.js\""
+		"be": "nodemon --watch server.ts --exec \"tsc -m nodenext --strict server.ts && node --env-file .env server.js\""
 	},
 	"dependencies": {
 		"express": "latest",

@@ -2,7 +2,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"be": "nodemon server.js"
+		"be": "nodemon --env-file .env server.js"
 	},
 	"dependencies": {
 		"express": "latest"

@@ -2,7 +2,11 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"be": "nodemon --watch server.ts --exec \"tsc -m nodenext --strict server.ts && node --env-file .env server.js\""
+		"be": "nodemon --watch server.ts --exec \"tsc -m nodenext --strict server.ts && node --env-file .env server.js\"",
+		"lint": "eslint .",
+		"build": "vite build",
+		"test": "vitest tests",
+		"e2e": "npx playwright test"
 	},
 	"dependencies": {
 		"express": "latest",
@@ -10,12 +14,17 @@
 		"react-dom": "latest"
 	},
 	"devDependencies": {
+		"@playwright/test": "latest",
 		"@types/express": "latest",
 		"@types/react": "latest",
 		"@types/react-dom": "latest",
+		"@typescript-eslint/eslint-plugin": "latest",
+		"@typescript-eslint/parser": "latest",
 		"@vitejs/plugin-react": "latest",
+		"eslint": "latest",
 		"nodemon": "latest",
 		"typescript": "latest",
-		"vite": "latest"
+		"vite": "latest",
+		"vitest": "latest"
 	}
 }

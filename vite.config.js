@@ -7,5 +7,6 @@ export default defineConfig({
 			"/api": "http://localhost:3000"
 		}
 	},
-	plugins: [react()]
+	plugins: [react()],
+	root: "frontend"
 });

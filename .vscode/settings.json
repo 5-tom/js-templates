@@ -1,0 +1,14 @@
+{
+	"files.exclude": {
+		"backend_build": true,
+		"node_modules": true,
+		".prettierrc": true,
+		"package-lock.json": true,
+		"postcss.config.js": true,
+		"tailwind.config.js": true,
+		"tsconfig.json": true,
+		"vite.config.js": true,
+		"**/index.css": true,
+		"**/script.tsx": true
+	}
+}

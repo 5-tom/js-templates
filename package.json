@@ -2,9 +2,11 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"be": "nodemon --watch backend -e '*' --exec \"tsc -m nodenext --strict backend/server.ts --outDir backend_build && cd backend_build && node --env-file ../.env server.js\""
+		"be": "nodemon --watch backend -e '*' --exec \"npm run prisma:generate && tsc -m nodenext --strict backend/server.ts --outDir backend_build && cd backend_build && node --env-file ../.env server.js\"",
+		"prisma:generate": "npx prisma generate --schema=./backend/prisma/schema.prisma"
 	},
 	"dependencies": {
+		"@prisma/client": "latest",
 		"express": "latest",
 		"react": "latest",
 		"react-dom": "latest"
